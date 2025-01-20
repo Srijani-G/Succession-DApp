@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p{
+  color: white;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  margin:10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Action Sections */
+.action {
+  margin: 20px 0;
+  text-align: left;
+}
+
+
+
+.action h3 {
+  color: #555;
+}
+
+.action p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+li span {
+  font-weight: bold;
+}
+
+/* Style for the entire welcome page */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering the content horizontally */
+  justify-content: center; /* Centering the content vertically */
+  height: 50vh; /* Full viewport height */
+  background-color: #f4f4f9; /* Light background color */
+  text-align: center; 
+  padding: 20px;
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Space between logo and app name */
+}
+
+.logo {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+.app-details {
+  padding: 10px;
+}
+
+.app-name {
+  font-size: 36px; /* App name size */
+  font-weight: bold;
+  color: #333; /* Dark color for app name */
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 18px; /* Smaller font for the tagline */
+  color: #777; /* Lighter color for the tagline */
+  font-style: italic;
+  margin: 10px 0;
+  max-width: 80%; /* Ensure tagline text doesn't stretch too far */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* CSS */
+.button-29 {
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+

@@ -49,7 +49,7 @@ function WelcomePage() {
     </div>
       <h1 style={{ textAlign: 'center' }}>Welcome to Succession</h1>
       
-      <p>What would you like to do today?</p>
+      <p style={{ color: 'black'}}>What would you like to do today?</p>
 
       {/* Show the connect wallet button if not connected */}
       {!account ? (
@@ -60,12 +60,12 @@ function WelcomePage() {
         
       ) : (
         <div>
-          <p>Connected: {account}</p>
+          <p style={{ color: 'black'}}>Connected</p>
         </div>
       )}
 
       {/* Display the message */}
-      {message && <p>{message}</p>}
+      {message && <p style={{ color: 'black'}}>{message}</p>}
 
       <div className="options">
         <Link to="/add-inheritor">
@@ -157,7 +157,7 @@ function DepositFundsPage() {
       const contract = new ethers.Contract(CONTRACT_ADDRESS, WillABI, signer);
 
       const tx = await contract.depositFunds({
-        value: parseInt(depositAmount)
+        value: (depositAmount)
       });
       await tx.wait();
       setMessage("Funds deposited successfully.");
@@ -195,7 +195,7 @@ function WithdrawFundsPage() {
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(CONTRACT_ADDRESS, WillABI, signer);
 
-      const tx = await contract.withdraw_funds(parseInt(withdrawAmount));
+      const tx = await contract.withdraw_funds((withdrawAmount));
       await tx.wait();
       setMessage("Funds withdrawn successfully.");
     } catch (error) {
@@ -233,7 +233,7 @@ function AddInheritorPage() {
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(CONTRACT_ADDRESS, WillABI, signer);
 
-      const tx = await contract.addInheritor(inheritorAddress, parseInt(percentage));
+      const tx = await contract.addInheritor(inheritorAddress, (percentage));
       await tx.wait();
       setMessage("Inheritor added successfully.");
     } catch (error) {
@@ -277,7 +277,7 @@ function ModifyInheritorPage() {
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(CONTRACT_ADDRESS, WillABI, signer);
 
-      const tx = await contract.modifyInheritor(inheritorAddress, parseInt(percentage));
+      const tx = await contract.modifyInheritor(inheritorAddress, (percentage));
       await tx.wait();
       setMessage("Inheritor modified successfully.");
     } catch (error) {
